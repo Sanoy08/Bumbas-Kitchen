@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the delicious menu at Bumba's Kitchen, featuring a variety of dishes.">
+    <title>Bumba's Kitchen - Menu</title>
+    <link rel="stylesheet" href="menu.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollSmoother.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="back-link" aria-label="Go back to home">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <img src="Elements/n1.png" alt="Bumba's Kitchen Logo" class="logo">
+        </div>
+    </header>
+
+    <!-- Search Bar -->
+    <section class="search-bar">
+        <input type="text" id="search-input" placeholder="Search for dishes..." aria-label="Search dishes">
+        <button id="search-button" aria-label="Search">
+            <i class="fas fa-search"></i>
+        </button>
+    </section>
+
+    <!-- No Results -->
+    <div id="no-results" style="display: none; text-align: center; margin-top: 20px;">
+        <img src="Elements/no results.png" alt="No results found" class="no-results-img">
+        <p>No dishes found. Try a different search.</p>
+    </div>
+
+    <!-- Floating Cart Button -->
+<a id="cart-button" href="cart.html" aria-label="Go to Cart">
+    <i class="fas fa-shopping-cart"></i>
+</a>
+
+
+
+    <!-- Main Content -->
+    <main>
+        <!-- Dish 1 -->
+        <section class="menu">
+            <div class="menu-item" data-name="Dish 1 ₹15">
+                <a href="dish-details.html">
+                    <img src="Elements/dish1.jpg" alt="Delicious Dish 1">
+                </a>
+                <div class="item-info">
+                    <h2>Dish 1</h2>
+                    <p class="price">₹15</p>
+                </div>
+            </div>
+
+            <!-- Dish 2 -->
+            <div class="menu-item" data-name="Dish 2 ₹20">
+                <a href="dish-details.html">
+                    <img src="Elements/dish2.jpg" alt="Delicious Dish 2">
+                </a>
+                <div class="item-info">
+                    <h2>Dish 2</h2>
+                    <p class="price">₹20</p>
+                </div>
+            </div>
+
+            <!-- Dish 3 -->
+            <div class="menu-item" data-name="Dish 3 ₹25">
+                <a href="dish-details.html">
+                    <img src="Elements/dish3.jpg" alt="Delicious Dish 3">
+                </a>
+                <div class="item-info">
+                    <h2>Dish 3</h2>
+                    <p class="price">₹25</p>
+                </div>
+            </div>
+
+            <!-- Dish 4 -->
+            <div class="menu-item" data-name="Dish 4 ₹30">
+                <a href="dish-details.html">
+                    <img src="Elements/dish4.jpg" alt="Delicious Dish 4">
+                </a>
+                <div class="item-info">
+                    <h2>Dish 4</h2>
+                    <p class="price">₹30</p>
+                </div>
+            </div>
+
+            <!-- Dish 5 -->
+            <div class="menu-item" data-name="Dish 5 ₹30">
+                <a href="dish-details.html">
+                    <img src="Elements/dish5.jpg" alt="Delicious Dish 5">
+                </a>
+                <div class="item-info">
+                    <h2>Dish 5</h2>
+                    <p class="price">₹30</p>
+                </div>
+            </div>
+
+            <!-- Dish 6 -->
+            <div class="menu-item" data-name="Dish 6 ₹30">
+                <a href="dish-details.html">
+                    <img src="Elements/dish6.jpg" alt="Delicious Dish 6">
+                </a>
+                <div class="item-info">
+                    <h2>Dish 6</h2>
+                    <p class="price">₹30</p>
+                </div>
+            </div>
+
+            <!-- Dish 7 -->
+            <div class="menu-item" data-name="Dish 7 ₹15">
+                <a href="dish-details.html">
+                    <img src="Elements/dish7.jpg" alt="Delicious Dish 7">
+                </a>
+                <div class="item-info">
+                    <h2>Dish 7</h2>
+                    <p class="price">₹15</p>
+                </div>
+            </div>
+
+            <!-- Dish 8 -->
+            <div class="menu-item" data-name="Dish 8 ₹15">
+                <a href="dish-details.html">
+                    <img src="Elements/dish8.jpg" alt="Delicious Dish 8">
+                </a>
+                <div class="item-info">
+                    <h2>Dish 8</h2>
+                    <p class="price">₹15</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Bumba's Kitchen. All rights reserved.</p>
+    </footer>
+
+    <!-- Notification -->
+    <div id="notification" class="notification">
+        <p id="notification-message"></p>
+    </div>
+
+    <script src="menu.js"></script>
+</body>
+</html>

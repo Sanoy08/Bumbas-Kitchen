@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your shopping cart at Bumba's Kitchen.">
+    <title>Your Cart - Bumba's Kitchen</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="dish-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <a href="menu.html" class="back-link" aria-label="Go back to home">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <img src="Elements/n1.png" alt="Bumba's Kitchen Logo" class="logo">
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <section class="cart-container">
+            <h1>Your Cart</h1>
+            <div id="cart-items" class="cart-items">
+                <!-- Cart items will be injected here by JavaScript -->
+            </div>
+            
+            <div id="empty-cart-message" class="empty-cart-message">
+                <p>Your cart is empty.</p>
+                <img src="Elements/shopping-cart.png" alt="Empty Cart" class="empty-cart-image"> <!-- Added Image -->
+                <a href="menu.html" class="discover-food-button">Discover Food</a>
+            </div>
+            <div class="cart-summary" style="display: none;">
+                <p id="total-price">Total: ₹0</p>
+                <a href="checkout.html" class="checkout-button">Proceed to Checkout</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Bumba's Kitchen. All rights reserved.</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
